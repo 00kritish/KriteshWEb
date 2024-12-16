@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 80px ;
+    background-color: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;  
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: royalblue;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width:30%;
+    height: 2px;
+    background:  #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Product Grid */
+.container {
+    margin-top: 20px;
+}
+.col-md-4 {
+    margin-bottom: 20px;
+}
+.col-md-4 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.col-md-4 img:hover {
+    transform: scale(1.1);
+}
+.btn-warning {
+    background-color: #f8c33b;
+    border: none;
+}
+.btn-warning:hover {
+    background-color: #d8a72a;
+}
+
+/* Table Styles */
+.table {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.table th {
+    background-color: #f8c33b;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.table td {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+.table td button {
+    margin-top: 5px;
+    font-size: 14px;
+}
+.table-bordered>tbody>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+}
+
